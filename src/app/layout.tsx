@@ -15,12 +15,30 @@ const tektur = Tektur({
 });
 
 export const metadata: Metadata = {
-  title: "Rubra Ink — Estúdio de Tatuagem",
+  title: "TomCash Tattoo | Salvador Tattoo Studio — Barra, Salvador - BA",
   description:
-    "Tatuagens autorais com significado. Conte sua história e a gente transforma em arte na pele.",
+    "Tatuagens autorais com técnica, sensibilidade e significado. Tom é co-proprietário do Salvador Tattoo Studio no Barra Center, com vista para o mar e Farol da Barra.",
+  icons: {
+    icon: "/Iluminart_Vetor_PB_Principal.svg",
+    shortcut: "/Iluminart_Vetor_PB_Principal.svg",
+    apple: "/assets/logo1-DkOgUzll.webp",
+  },
+  openGraph: {
+    title: "TomCash Tattoo | Salvador Tattoo Studio",
+    description:
+      "Tatuagens autorais, únicas e exclusivas em Salvador - BA. Blackwork, Fine line, Anime, Realismo, Colorido e o projeto autoral Os Selos.",
+    url: "https://tomcashtattoo.com.br",
+    siteName: "TomCash Tattoo",
+    locale: "pt_BR",
+    type: "website",
+  },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="pt-BR"
